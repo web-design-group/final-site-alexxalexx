@@ -1,0 +1,841 @@
+body
+{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #EFEDEB;
+}
+html
+{
+    height: 100%;
+}
+
+/*Подключение локальных шрифтов*/
+@font-face {
+	font-family: "TildaSansWebExtraBold";
+	src: 
+		url("/fonts/tilda-sans_extra-bold-.woff2") format("woff2"),
+		url("/fonts/tilda-sans_extra-bold-.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "TildaSansWebBold";
+	src: 
+		url("/fonts/tilda-sans_bold.woff2") format("woff2"),
+		url("/fonts/tilda-sans_bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "TildaSansWebMedium";
+	src: 
+		url("/fonts/tilda-sans_medium.woff2") format("woff2"),
+		url("fonts/tilda-sans_medium.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*UI-Kit Обозначение шрифтовых кеглей и начертаний*/
+.font_h0
+{
+    font-family: "TildaSansWebExtraBold", sans-serif;
+    font-weight: normal;
+    font-size: 128px;
+}
+.font_h1
+{
+    font-family: "TildaSansWebBold", sans-serif;
+    font-weight: normal;
+    font-size: 72px;
+}
+.font_h2
+{
+    font-family: "TildaSansWebBold", sans-serif;
+    font-weight: normal;
+    font-size: 48px;
+}
+.font_t1
+{
+    font-family: "TildaSansWebBold", sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    letter-spacing: 8%;
+}
+.font_b
+{
+    font-family: "TildaSansWebMedium", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+.font_b_caps
+{
+    font-family: "TildaSansWebMedium", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 8%;
+}
+.font_btn
+{
+    font-family: "TildaSansWebBold", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+.font_btn_caps
+{
+    font-family: "TildaSansWebBold", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 8%;
+}
+
+/*UI-Kit Обозначение цветовой палитры*/
+.clr_black
+{
+    color: #1E1E1E;
+}
+.clr_coral
+{
+    color: #FF7C6E;
+}
+.clr_pine
+{
+    color: #243A2D;
+}
+.clr_sand
+{
+    color: #CFC6BE;
+}
+.clr_beige
+{
+    color: #EFEDEB;
+}
+
+/*UI-Kit Обозначение кнопок*/
+.action_button
+{
+    height: 80px;
+
+    background-color: #1E1E1E;
+    border: 0px;
+    border-radius: 40px;
+
+    font-family: "TildaSansWebBold", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 8%;
+    color: #EFEDEB;
+}
+.secondary_button
+{
+    height: 80px;
+
+    background-color: #EFEDEB;
+    border: 2px;
+    border-style: solid;
+    border-color: #1E1E1E;
+    border-radius: 40px;
+
+    font-family: "TildaSansWebBold", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 8%;
+    color: #1E1E1E;
+}
+
+.null_margin
+{
+    margin: 0px;
+}
+
+/*СТАРТ*/
+
+/*Шапка страницы*/
+.header 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 48px;
+    width: auto;
+
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    background-color: #EFEDEB;
+}
+.header_logo /*Контейнер с логотипом*/
+{
+    height: 48px;
+    width: auto;
+}
+.header_logo_img /*Логотип*/
+{
+    height: 100%;
+    width: auto;
+}
+.header_catalogue /*Контейнер с каталогом*/
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 100%;
+    width: 320px;
+}
+.header_furniture /*Каталог Мебель*/
+{
+    color: #1E1E1E;
+    text-decoration: none;
+}
+.header_lights /*Каталог Свет*/
+{
+    color: #1E1E1E;
+    text-decoration: none;
+}
+.header_fabrics /*Каталог Текстиль*/
+{
+    color: #1E1E1E;
+    text-decoration: none;
+}
+.header_logo_catalogue /*Контейнер Лого + Каталог*/
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    height: 100%;
+    width: 480px;
+}
+.header_menu /*Контейнер иконок*/
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 100%;
+}
+.header_search_button /*Иконка Поиск*/
+{
+    height: 48px;
+    width: 48px;
+
+    padding: 0px;
+    border: 0px;
+    margin-right: 16px;
+    background: url(/img/search_icon.png) center / 48px 48px no-repeat;
+}
+.header_cart_button /*Иконка Корзина*/
+{
+    height: 48px;
+    width: 48px;
+
+    padding: 0px;
+    border: 0px;
+    margin-right: 16px;
+    margin-left: 16px;
+    background: url(/img/cart_icon.png) center / 48px 48px no-repeat;
+}
+.header_account_button /*Иконка ЛК*/
+{
+    height: 48px;
+    width: 48px;
+
+    padding: 0px;
+    border: 0px;
+    margin-left: 16px;
+    background: url(/img/account_icon.png) center / 48px 48px no-repeat;
+}
+/*Hero-Block*/
+.hero_block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 952px;
+    width: auto;
+
+    padding-left: 80px;
+    padding-right: 80px;
+
+    background: linear-gradient(#EFEDEB, #CFC6BE);
+}
+.hero_img /*Контейнер изображения Hero-Block*/
+{
+    height: 100%;
+    width: 50%;
+
+    margin-right: 10px;
+}
+.hero_skogen_img /*Изображение Hero-Block*/
+{
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+.hero_contents /*Контейнер описания и текст Hero-Block*/
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+
+    height: 100%;
+    width: 50%;
+
+    margin-left: 10px;
+}
+.hero_headline /*Заголовок Hero-Block*/
+{
+    margin: 0px;
+}
+.hero_description /*Описание Hero-Block*/
+{
+    width: 25%;
+    
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+.hero_pricetag /*Ценник Hero-Block*/
+{
+    width: 50%;
+
+    margin-top: 100px;
+    margin-bottom: 0px;
+
+    font-family: "TildaSansWebBold", sans-serif;
+    font-weight: normal;
+    font-size: 48px;
+    letter-spacing: 8%;
+}
+.hero_button /*Кнопка в каталог Hero-Block*/
+{
+    width: 25%;
+
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+/*Заголовок каруселли новинок*/
+.recents_headline
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    height: 48px;
+    width: auto;
+
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 180px;
+    padding-bottom: 100px;
+
+}
+.recents /*Контейнер карусели новинок*/
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 720px;
+    width: auto;
+
+    padding-left: 80px;
+    padding-right: 80px;
+}
+/*Карточка товара*/
+.item_card 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    height: 100%;
+    width: 348px;
+}
+.item_card_img /*Фото карточки товара*/
+{
+    height: auto;
+    width: 100%;
+}
+.item_card_info /*Контейнер информации карточки товара*/
+{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.item_card_brand /*Бренд карточки товара*/
+{
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.item_card_description /*Описание карточки товара*/
+{
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+.item_card_pricetag /*Ценник карточки товара*/
+{
+    margin: 0px;
+}
+.item_card_buttons /*Контейнер кнопок картчоки товара*/
+{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.cart_button /*Кнопка В корзину карточки товара*/
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 80px;
+    width: 80px;
+
+    border-radius: 40px;
+    border: 0px;
+
+    padding: 16px;
+    border: 0px;
+    margin: 0px;
+
+    background-color: #1E1E1E;
+}
+.cart_button_img /*Иконка кнопки В корзину карточки товара*/
+{
+    width: 48px;
+    height: 48px;
+}
+.like_button /*Кнопка Понравилось карточки товара*/
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 80px;
+    width: 80px;
+
+    padding: 16px;
+    border: 0px;
+    margin: 0px;
+
+    background-color: #EFEDEB;
+}
+.like_button_img /*Иконка кнопки Понравилось карточки товара*/
+{
+    width: 48px;
+    height: 48px;
+}
+.button_left /*Кнопка карусель влево*/
+{
+    height: 48px;
+    width: 48px;
+
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    background: url(/img/left_arrow_icon.png) center / 48px 48px no-repeat;
+}
+.button_right /*Кнопка карусель вправо*/
+{
+    height: 48px;
+    width: 48px;
+
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    background: url(/img/right_arrow_icon.png) center / 48px 48px no-repeat;
+}
+/* Блок Коллекций */
+.collections_block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    width: auto;
+    height: 640px;
+
+    padding-top: 240px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.collections_img
+{
+    width: 50%;
+    height: 100%;
+
+    margin-right: 10px;
+}
+.collections_2025_img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.collections_contents
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    height: 100%;
+    width: 40%;
+
+    margin-left: 10px;
+}
+.collections_header
+{
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.collections_title
+{
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+.collections_description
+{
+    width: 50%;
+
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+.collections_button
+{
+    width: 50%;
+    
+    margin: 0px;
+}
+.popular_contents
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 48px;
+    width: auto;
+    
+    padding-top: 180px;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 100px;
+}
+.popular_catalogue
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+    width: 320px;
+
+}
+.popular
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 720px;
+    width: auto;
+
+    padding-left: 180px;
+    padding-right: 180px;
+}
+.popular_button_container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.popular_button
+{
+    width: 15%;
+    
+    margin-top: 120px;
+}
+.footer
+{
+    margin-top: 240px;
+    padding-top: 120px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 240px;
+    background-color: #1E1E1E;
+}
+.footer_columns
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.footer_column_content
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer_column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer_logo
+{
+    height: 48px;
+    width: auto;
+
+    margin-top: 120px;
+}
+.footer_logo_img
+{
+    height: 100%;
+    width: auto;
+}
+.cart_screen
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 180px;
+
+    padding-left: 228px;
+    padding-right: 228px;
+}
+.cart_contents
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-right: 80px;
+
+    width: 60%;
+    height: auto;
+}
+.cart_payment_module
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: #243A2D;
+
+    margin-left: 80px;
+
+    width: 40%;
+    height: auto;
+}
+.cart_contents_title
+{
+    margin: 0px;
+    margin-bottom: 100px;
+}
+.cart_item_card
+{
+    width: 100%;
+    height: auto;
+
+    margin-top: 60px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.cart_item_card_img
+{
+    height: 160px;
+    width: auto;
+}
+.cart_item_card_contents
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-top: 16px;
+}
+.cart_item_card_pricetag
+{
+    margin-top: 16px;
+}
+.delete_button
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 80px;
+    width: 80px;
+
+    border-radius: 40px;
+    border: 0px;
+
+    padding: 16px;
+    border: 0px;
+    margin: 0px;
+    margin-left: 16px;
+
+    background-color: #CFC6BE;
+}
+.delete_button_img
+{
+    width: 48px;
+    height: 48px;
+}
+.cart_item_card_buttons
+{
+    margin-top: 24px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.cart_quantity_module
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 80px;
+    width: auto;
+
+    background-color: #EFEDEB;
+    border: 2px;
+    border-style: solid;
+    border-color: #1E1E1E;
+    border-radius: 40px;
+}
+.substract_button
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 48px;
+    width: 48px;
+
+    border-radius: 40px;
+    border: 0px;
+
+    padding: 16px;
+    border: 0px;
+    margin-left: 16px;
+    margin-right: 32px;
+
+    background-color: #EFEDEB
+}
+.substract_button_img
+{
+    width: 48px;
+    height: 48px;
+}
+.add_button
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 48px;
+    width: 48px;
+
+    border-radius: 40px;
+    border: 0px;
+
+    padding: 16px;
+    border: 0px;
+    margin-left: 32px;
+    margin-right: 16px;
+
+    background-color: #EFEDEB
+}
+.add_button_img
+{
+    width: 48px;
+    height: 48px;
+}
+.item_page_screen
+{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-areas: "photo contents description";
+
+    margin-top: 180px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.item_page_photo
+{
+    grid-area: photo;
+    display: flex;
+
+    height: auto;
+    width: 100%;
+}
+.item_page_contents
+{
+    grid-area: contents;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    height: auto;
+    width: 100%;
+}
+.item_page_name
+{
+    margin-top: 16px;
+}
+.item_page_pricetag
+{
+    margin-top: 200px;
+}
+.item_page_description
+{
+    grid-area: description;
+}
+.item_page_description_text
+{
+    width: 50%;
+}
+.item_page_button
+{
+    width: 50%;
+    margin-top: 30px;
+}
+.item_page_img
+{
+    width: 100%;
+    height: auto;
+}
