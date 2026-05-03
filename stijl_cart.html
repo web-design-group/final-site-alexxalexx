@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" charset="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Корзина</title>
+        <link rel="stylesheet" href="css/stijl_styles.css">
+    </head>
+    <body>
+        <!-- Шапка страницы -->
+        <header class="header">
+            <!-- Контейнер Логотип + Каталог -->
+            <div class="header_logo_catalogue">
+                <!-- Логотип -->
+                <div class="header_logo">
+                    <img class="header_logo_img" src="img/stijl_logo.png" alt="stijl_logo">
+                </div>
+                <!-- Каталог -->
+                <nav class="header_catalogue">
+                    <a class="header_furniture font_b" href="#">мебель</a>
+                    <a class="header_lights font_b" href="#">свет</a>
+                    <a class="header_fabrics font_b" href="#">текстиль</a>
+                </nav>
+            </div>
+            <!-- Контейнер иконок -->
+            <div class="header_menu">
+                <form action="#" method="get">
+                    <button class="header_search_button" type="submit"></button>
+                </form>
+                <form action="stijl_cart.html" method="get">
+                    <button class="header_cart_button" type="submit"></button>
+                </form>
+                <form action="#" method="get">
+                    <button class="header_account_button" type="submit"></button>
+                </form>
+            </div>
+        </header>
+        <!-- Контейнер Содержимое корзины + Модуль оплаты -->
+        <div class="cart_screen">
+            <div class="cart_contents">
+                <h2 class="cart_contents_title clr_black font_h1">Корзина</h2>
+                <!-- Карточка товара Стул MASMO в корзине -->
+                <div class="cart_item_card">
+                    <!-- Фотография -->
+                    <img class="cart_item_card_img" src="/img/item_cards/masmo_chair_img.png" alt="item_card_img">
+                    <!-- Блок описания + Блок кнопок Добавить и Удалить -->
+                    <div class="cart_item_card_contents">
+                        <p class="item_card_brand font_t1">MASMO</p>
+                        <p class="item_card_description font_b">Стул</p>
+                        <!-- Блок кнопок Добавить и Удалить -->
+                        <div class="cart_item_card_buttons">
+                            <!-- Контейнер кнопок Добавить -->
+                            <div class="cart_quantity_module">
+                                <button class="substract_button" type="submit">
+                                    <img class="substract_button_img" src="img/remove_icon.png">
+                                </button>
+                                <p class="font_btn_caps">1</p>
+                                <button class="add_button" type="submit">
+                                    <img class="add_button_img" src="img/add_icon.png">
+                                </button>
+                            </div>
+                            <!-- Кнопка Удалить -->
+                            <button class="delete_button" type="submit">
+                                <img class="delete_button_img" src="img/delete_icon.png">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Цена -->
+                    <p class="cart_item_card_pricetag font_t1">6799₽</p>
+                </div>
+                <!-- Карточка товара диван ALBY в корзине -->
+                <div class="cart_item_card">
+                    <!-- Фотография -->
+                    <img class="cart_item_card_img" src="/img/item_cards/alby_sofa_img.png" alt="item_card_img">
+                    <!-- Блок описания + Блок кнопок Добавить и Удалить -->
+                    <div class="cart_item_card_contents">
+                        <p class="item_card_brand font_t1">ALBY</p>
+                        <p class="item_card_description font_b">Диван</p>
+                        <!-- Блок кнопок Добавить и Удалить -->
+                        <div class="cart_item_card_buttons">
+                            <!-- Контейнер кнопок Добавить -->
+                            <div class="cart_quantity_module">
+                                <button class="substract_button" type="submit">
+                                    <img class="substract_button_img" src="img/remove_icon.png">
+                                </button>
+                                <p class="font_btn_caps">1</p>
+                                <button class="add_button" type="submit">
+                                    <img class="add_button_img" src="img/add_icon.png">
+                                </button>
+                            </div>
+                            <!-- Кнопка Удалить -->
+                            <button class="delete_button" type="submit">
+                                <img class="delete_button_img" src="img/delete_icon.png">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Цена -->
+                    <p class="cart_item_card_pricetag font_t1">17999₽</p>
+                </div>
+            </div>
+            <div class="cart_payment_module">
+                <p> Тест 2</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_columns">
+                <div class="footer_column">
+                    <p class="clr_beige font_b footer_column_content">главная</p>
+                    <p class="clr_beige font_b footer_column_content">коллекции</p>
+                    <p class="clr_beige font_b footer_column_content">личный кабинет</p>
+                    <p class="clr_beige font_b footer_column_content">услуги</p>
+                </div>
+                <div class="footer_column">
+                    <p class="clr_beige font_b footer_column_content">каталог</p>
+                    <p class="clr_beige font_b footer_column_content">мебель</p>
+                    <p class="clr_beige font_b footer_column_content">свет</p>
+                    <p class="clr_beige font_b footer_column_content">текстиль</p>
+                </div>
+                <div class="footer_column">
+                    <p class="clr_beige font_b footer_column_content">о нас</p>
+                    <p class="clr_beige font_b footer_column_content">оплата</p>
+                    <p class="clr_beige font_b footer_column_content">гарантия</p>
+                    <p class="clr_beige font_b footer_column_content">партнёрам</p>
+                </div>
+                <div class="footer_delivery_column">
+                    <p class="clr_beige font_b footer_column_content">доставка</p>
+                    <p class="clr_sand font_btn footer_column_content">ежедневно с 10:00 до 23:00</p>
+                </div>
+                <div class="footer_contacts_column">
+                    <p class="clr_beige font_b footer_column_content">контакты</p>
+                    <p class="clr_sand font_btn footer_column_content">+7(911)123-45-67</p>
+                    <p class="clr_sand font_btn footer_column_content">examplemail@mail.com</p>
+                </div>  
+            </div>
+            <div class="footer_logo">
+                <img class="footer_logo_img" src="img/stijl._logo_light.png" alt="stijl_logo">
+            </div>
+        </div>
+    </body>
+</html>
