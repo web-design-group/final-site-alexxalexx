@@ -14,24 +14,24 @@ html
 @font-face {
 	font-family: "TildaSansWebExtraBold";
 	src: 
-		url("/fonts/tilda-sans_extra-bold-.woff2") format("woff2"),
-		url("/fonts/tilda-sans_extra-bold-.woff") format("woff");
+		url("./fonts/tilda-sans_extra-bold-.woff2") format("woff2"),
+		url("./fonts/tilda-sans_extra-bold-.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: "TildaSansWebBold";
 	src: 
-		url("/fonts/tilda-sans_bold.woff2") format("woff2"),
-		url("/fonts/tilda-sans_bold.woff") format("woff");
+		url("./fonts/tilda-sans_bold.woff2") format("woff2"),
+		url("./fonts/tilda-sans_bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: "TildaSansWebMedium";
 	src: 
-		url("/fonts/tilda-sans_medium.woff2") format("woff2"),
-		url("fonts/tilda-sans_medium.woff") format("woff");
+		url("./fonts/tilda-sans_medium.woff2") format("woff2"),
+		url("./fonts/tilda-sans_medium.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
