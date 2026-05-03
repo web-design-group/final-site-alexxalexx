@@ -228,7 +228,7 @@ html
     padding: 0px;
     border: 0px;
     margin-right: 16px;
-    background: url(/img/search_icon.png) center / 48px 48px no-repeat;
+    background: url(./img/search_icon.png) center / 48px 48px no-repeat;
 }
 .header_cart_button /*Иконка Корзина*/
 {
@@ -239,7 +239,7 @@ html
     border: 0px;
     margin-right: 16px;
     margin-left: 16px;
-    background: url(/img/cart_icon.png) center / 48px 48px no-repeat;
+    background: url(./img/cart_icon.png) center / 48px 48px no-repeat;
 }
 .header_account_button /*Иконка ЛК*/
 {
@@ -249,7 +249,7 @@ html
     padding: 0px;
     border: 0px;
     margin-left: 16px;
-    background: url(/img/account_icon.png) center / 48px 48px no-repeat;
+    background: url(./img/account_icon.png) center / 48px 48px no-repeat;
 }
 /*Hero-Block*/
 .hero_block
@@ -450,7 +450,7 @@ html
     padding: 0px;
     border: 0px;
     margin: 0px;
-    background: url(/img/left_arrow_icon.png) center / 48px 48px no-repeat;
+    background: url(./img/left_arrow_icon.png) center / 48px 48px no-repeat;
 }
 .button_right /*Кнопка карусель вправо*/
 {
@@ -460,7 +460,7 @@ html
     padding: 0px;
     border: 0px;
     margin: 0px;
-    background: url(/img/right_arrow_icon.png) center / 48px 48px no-repeat;
+    background: url(./img/right_arrow_icon.png) center / 48px 48px no-repeat;
 }
 /* Блок Коллекций */
 .collections_block
