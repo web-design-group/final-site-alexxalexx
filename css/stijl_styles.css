@@ -125,6 +125,12 @@ html
     font-size: 20px;
     letter-spacing: 8%;
     color: #EFEDEB;
+
+    transition: 0.3s;
+}
+.action_button:hover
+{
+    background-color: #FF7C6E;
 }
 .secondary_button
 {
@@ -141,8 +147,14 @@ html
     font-size: 20px;
     letter-spacing: 8%;
     color: #1E1E1E;
-}
 
+    transition: 0.3s;
+}
+.secondary_button:hover
+{
+    background-color: #1E1E1E;
+    color: #EFEDEB;
+}
 .null_margin
 {
     margin: 0px;
@@ -229,6 +241,13 @@ html
     border: 0px;
     margin-right: 16px;
     background: url(../img/search_icon.png) center / 48px 48px no-repeat;
+
+    transition: 0.3s;
+}
+.header_search_button:hover
+{
+    transform: scale(1.1);
+    opacity: 50%;
 }
 .header_cart_button /*Иконка Корзина*/
 {
@@ -240,6 +259,13 @@ html
     margin-right: 16px;
     margin-left: 16px;
     background: url(../img/cart_icon.png) center / 48px 48px no-repeat;
+
+    transition: 0.3s;
+}
+.header_cart_button:hover
+{
+    transform: scale(1.1);
+    opacity: 50%;
 }
 .header_account_button /*Иконка ЛК*/
 {
@@ -250,6 +276,13 @@ html
     border: 0px;
     margin-left: 16px;
     background: url(../img/account_icon.png) center / 48px 48px no-repeat;
+
+    transition: 0.3s;
+}
+.header_account_button:hover
+{
+    transform: scale(1.1);
+    opacity: 50%;
 }
 /*Hero-Block*/
 .hero_block
@@ -416,6 +449,12 @@ html
     margin: 0px;
 
     background-color: #1E1E1E;
+
+    transition: 0.3s;
+}
+.cart_button:hover
+{
+    background-color: #FF7C6E;
 }
 .cart_button_img /*Иконка кнопки В корзину карточки товара*/
 {
@@ -451,6 +490,13 @@ html
     border: 0px;
     margin: 0px;
     background: url(../img/left_arrow_icon.png) center / 48px 48px no-repeat;
+
+    transition: 0.3s;
+}
+.button_left:hover
+{
+    transform: scale(1.1);
+    opacity: 50%;
 }
 .button_right /*Кнопка карусель вправо*/
 {
@@ -461,6 +507,13 @@ html
     border: 0px;
     margin: 0px;
     background: url(../img/right_arrow_icon.png) center / 48px 48px no-repeat;
+
+    transition: 0.3s;
+}
+.button_right:hover
+{
+    transform: scale(1.1);
+    opacity: 50%;
 }
 /* Блок Коллекций */
 .collections_block
@@ -622,7 +675,7 @@ html
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
 
     margin-top: 180px;
 
@@ -645,8 +698,6 @@ html
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    background-color: #243A2D;
 
     margin-left: 80px;
 
@@ -706,6 +757,16 @@ html
     margin-left: 16px;
 
     background-color: #CFC6BE;
+
+    transition: 0.3s;
+}
+.delete_button:hover
+{
+    background-color: #EFEDEB;
+    border: 2px;
+    border-style: solid;
+    border-color: #1E1E1E;
+    border-radius: 50%;
 }
 .delete_button_img
 {
@@ -753,7 +814,14 @@ html
     margin-left: 16px;
     margin-right: 32px;
 
-    background-color: #EFEDEB
+    background-color: #EFEDEB;
+
+    transition: 0.3s;
+}
+.substract_button:hover
+{
+    opacity: 50%;
+    transform: scale(1.1);
 }
 .substract_button_img
 {
@@ -777,7 +845,14 @@ html
     margin-left: 32px;
     margin-right: 16px;
 
-    background-color: #EFEDEB
+    background-color: #EFEDEB;
+
+    transition: 0.3s;
+}
+.add_button:hover
+{
+    opacity: 50%;
+    transform: scale(1.1);
 }
 .add_button_img
 {
@@ -838,4 +913,36 @@ html
 {
     width: 100%;
     height: auto;
+}
+.promocode_module
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 80px;
+}
+.promocode_input
+{
+    height: 76px;
+    width: 100%;
+
+    padding-left: 40px;
+    
+    background-color: #EFEDEB;
+    border: 2px;
+    border-style: solid;
+    border-color: #1E1E1E;
+    border-radius: 80px;
+}
+.promocode_button_img
+{
+    width: 48px;
+    height: 48px;
+}
+.order_button
+{
+    width: 100%;
+    margin-top: 30px;
 }
